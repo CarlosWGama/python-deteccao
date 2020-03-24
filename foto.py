@@ -1,10 +1,12 @@
 from lib.deteccao import Deteccao
-from lib.deteccao import HAARCASCATE
 
 dt = Deteccao()
 
 dt.selecionarImagem('img.jpg')
-#dt.detectar(HAARCASCATE.ROSTO)
 dt.detectaRosto(True)
+
+#Caso deseje salvar
 dt.salvar('fotos-salvar/imagem2.jpg')
+
+#Caso deseje exibir na tela
 dt.exibir()
